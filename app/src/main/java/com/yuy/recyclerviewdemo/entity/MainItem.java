@@ -1,6 +1,6 @@
 package com.yuy.recyclerviewdemo.entity;
 
-public class HomeItem {
+public class MainItem {
 
     private String title;
     private Class<?> activity;

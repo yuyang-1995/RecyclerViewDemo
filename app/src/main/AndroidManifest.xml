@@ -3,9 +3,10 @@
     package="com.yuy.recyclerviewdemo">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="RevyvlerViewDemo"
+        android:label="RecyclerViewDemo"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
