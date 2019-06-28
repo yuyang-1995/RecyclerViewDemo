@@ -21,6 +21,7 @@ import com.yuy.recyclerviewdemo.entity.Status;
 public class AnimationUseActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
+
     private AnimationAdapter mAnimationAdapter;
 
 
@@ -32,6 +33,7 @@ public class AnimationUseActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_list);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         initAdapter();
         initMenu();
         initView();
@@ -81,6 +83,7 @@ public class AnimationUseActivity extends AppCompatActivity {
                 mRecyclerView.setAdapter(mAnimationAdapter);
             }
         });
+
         //init firstOnly state
         mAnimationAdapter.isFirstOnly(false);
         SwitchButton switchButton = (SwitchButton) findViewById(R.id.switch_button);
@@ -102,7 +105,10 @@ public class AnimationUseActivity extends AppCompatActivity {
 
     private void initAdapter(){
         mAnimationAdapter = new AnimationAdapter();
+
+        //
         mAnimationAdapter.openLoadAnimation();
+
         int mFirstPageItemCount = 3;
         mAnimationAdapter.setNotDoAnimationCount(mFirstPageItemCount);
         mAnimationAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {

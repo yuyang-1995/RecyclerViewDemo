@@ -18,6 +18,7 @@ public class MainAdapter extends BaseQuickAdapter<MainItem, BaseViewHolder> {
 
     @Override
     protected void convert(BaseViewHolder helper, MainItem item) {
+
         helper.setText(R.id.text, item.getTitle());
         helper.setImageResource(R.id.icon, item.getImageResource());
     }

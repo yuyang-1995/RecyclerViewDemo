@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context=".AnimationUseActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -52,7 +51,7 @@
 
             <com.kyleduo.switchbutton.SwitchButton
                 android:id="@+id/switch_button"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 app:kswTextOff="false"
@@ -60,7 +59,7 @@
                 android:textColor="@drawable/custom_text_state_color"
                 app:kswThumbDrawable="@drawable/thumb_drawable"
                 app:kswThumbColor="#555771"
-                app:kswTintColor="#00ddB6"/>
+                app:kswTintColor="#10ddB6"/>
 
         </LinearLayout>
     </LinearLayout>
