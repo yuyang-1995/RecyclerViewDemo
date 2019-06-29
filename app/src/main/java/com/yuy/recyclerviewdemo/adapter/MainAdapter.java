@@ -1,5 +1,8 @@
 package com.yuy.recyclerviewdemo.adapter;
 
+import android.view.View;
+import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -17,10 +20,12 @@ public class MainAdapter extends BaseQuickAdapter<MainItem, BaseViewHolder> {
     }
 
     @Override
-    protected void convert(BaseViewHolder helper, MainItem item) {
+    protected void convert(BaseViewHolder helper, final MainItem item) {
 
-        helper.setText(R.id.text, item.getTitle());
-        helper.setImageResource(R.id.icon, item.getImageResource());
+        helper.setText(R.id.text, item.getTitle())
+                .setImageResource(R.id.icon, item.getImageResource());
+        //   .addOnClickListener(R.id.text);
+     //   helper.setImageResource(R.id.icon, item.getImageResource());
     }
 
 }

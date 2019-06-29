@@ -48,14 +48,12 @@ public class AnimationUseActivity extends AppCompatActivity {
                 finish();
             }
         });
-
     }
 
     private void initMenu(){
         MaterialSpinner spinner = (MaterialSpinner) findViewById(R.id.spinner);
         spinner.setItems("AlphaIn", "ScaleIn", "SlideInBottom", "SlideInLeft", "SlideInRight", "Custom");
         spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
-
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
                 switch (position) {

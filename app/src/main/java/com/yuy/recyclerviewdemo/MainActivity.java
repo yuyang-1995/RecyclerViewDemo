@@ -78,6 +78,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+//        mainAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
+//            @Override
+//            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+//                Intent intent = new Intent(MainActivity.this, ACTIVITY[position]);
+//                startActivity(intent);
+//            }
+//        });
 
            mRecyclerView.setAdapter(mainAdapter);
     }

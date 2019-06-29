@@ -1,5 +1,7 @@
 package com.yuy.recyclerviewdemo.entity;
 
+import android.content.Context;
+
 public class MainItem {
 
     private String title;
